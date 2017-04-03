@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Cproj:  Fichier source de convert.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Cproj
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Rendu de Map openstreetMap</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">convert.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CONVERT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CONVERT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keywordtype">double</span> <a class="code" href="convert_8c.html#aeedcbf011fda1cb97bc1823632095486">distance_calculation</a>(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keywordtype">double</span> <a class="code" href="convert_8c.html#a8012f8bd66798ffbdd27462c9f593a54">deg2rad</a>(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">double</span> <a class="code" href="convert_8c.html#a803962dcc67fb56b3b2ab1f2bb517c7c">distance_lat</a>();</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">double</span> <a class="code" href="convert_8c.html#aa9cbe1314f4028d84a3954c2229e320a">distance_lon</a>();</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">double</span> <a class="code" href="convert_8c.html#a0afefc5d3ca5d206a7d6252a8901946c">proportion</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="convert_8c_html_a0afefc5d3ca5d206a7d6252a8901946c"><div class="ttname"><a href="convert_8c.html#a0afefc5d3ca5d206a7d6252a8901946c">proportion</a></div><div class="ttdeci">double proportion()</div><div class="ttdoc">la hauteur de la map </div><div class="ttdef"><b>Definition:</b> convert.c:83</div></div>
+<div class="ttc" id="convert_8c_html_aeedcbf011fda1cb97bc1823632095486"><div class="ttname"><a href="convert_8c.html#aeedcbf011fda1cb97bc1823632095486">distance_calculation</a></div><div class="ttdeci">double distance_calculation(double tlat1, double tlon1, double tlat2, double tlon2)</div><div class="ttdoc">Nous donne la distance en kilomètre entre 2 points. </div><div class="ttdef"><b>Definition:</b> convert.c:24</div></div>
+<div class="ttc" id="convert_8c_html_a8012f8bd66798ffbdd27462c9f593a54"><div class="ttname"><a href="convert_8c.html#a8012f8bd66798ffbdd27462c9f593a54">deg2rad</a></div><div class="ttdeci">double deg2rad(double deg)</div><div class="ttdoc">Transforme un degré en radian. </div><div class="ttdef"><b>Definition:</b> convert.c:47</div></div>
+<div class="ttc" id="convert_8c_html_aa9cbe1314f4028d84a3954c2229e320a"><div class="ttname"><a href="convert_8c.html#aa9cbe1314f4028d84a3954c2229e320a">distance_lon</a></div><div class="ttdeci">double distance_lon()</div><div class="ttdoc">la distance entre deux longitude de la map </div><div class="ttdef"><b>Definition:</b> convert.c:71</div></div>
+<div class="ttc" id="convert_8c_html_a803962dcc67fb56b3b2ab1f2bb517c7c"><div class="ttname"><a href="convert_8c.html#a803962dcc67fb56b3b2ab1f2bb517c7c">distance_lat</a></div><div class="ttdeci">double distance_lat()</div><div class="ttdoc">la distance entre deux latitude de la map </div><div class="ttdef"><b>Definition:</b> convert.c:59</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 17 Avril 2016 23:07:40 pour Cproj par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

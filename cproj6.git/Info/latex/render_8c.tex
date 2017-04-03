@@ -1,0 +1,218 @@
+\hypertarget{render_8c}{\section{Référence du fichier render.\-c}
+\label{render_8c}\index{render.\-c@{render.\-c}}
+}
+{\ttfamily \#include \char`\"{}constante.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}render.\-h\char`\"{}}\\*
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{render_8c_aa4fd5f1de813e9bf7d38968394ef252f_aa4fd5f1de813e9bf7d38968394ef252f}{sdl\-\_\-main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{render_8c_a65a16a681c97488405248526c5bf4895_a65a16a681c97488405248526c5bf4895}{init\-\_\-window} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_a7fad0bceee2d4417b715e090a15c796f_a7fad0bceee2d4417b715e090a15c796f}{restart\-\_\-window} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_a9c70295b5faa27756045c5f078b629b4_a9c70295b5faa27756045c5f078b629b4}{is\-\_\-running} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_a33dcd462e888b992eb57ed8e69116f8e_a33dcd462e888b992eb57ed8e69116f8e}{background\-\_\-menu} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_aba6d10cb993ac722fdeacb73551f7742_aba6d10cb993ac722fdeacb73551f7742}{text\-\_\-menu} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_a4c3b559b48b14647bf08fa2907942aca_a4c3b559b48b14647bf08fa2907942aca}{moov\-\_\-up} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_a8e186ceed4f50d19f71753f927142637_a8e186ceed4f50d19f71753f927142637}{moov\-\_\-down} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_a856dfd54641b1462de6ad670423b68a8_a856dfd54641b1462de6ad670423b68a8}{moov\-\_\-right} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_a80fa3520619ec673d7b37f22d1f1a535_a80fa3520619ec673d7b37f22d1f1a535}{moov\-\_\-left} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_acea5f2a8b0f7505c094998b3b51c15ff_acea5f2a8b0f7505c094998b3b51c15ff}{zoom\-\_\-in} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_a9147ae27acf84eb3d4dea944eb309208_a9147ae27acf84eb3d4dea944eb309208}{zoom\-\_\-out} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\item 
+void \hyperlink{render_8c_a4794c7c3d2fb1552e202c5fc9727a6f1_a4794c7c3d2fb1552e202c5fc9727a6f1}{print\-\_\-water\-\_\-area} (S\-D\-L\-\_\-\-Surface $\ast$window, short x\mbox{[}$\,$\mbox{]}, short y\mbox{[}$\,$\mbox{]}, int taille, char $\ast$s)
+\item 
+void \hyperlink{render_8c_a8735ee462660001e1b2ee444cd3a2db6_a8735ee462660001e1b2ee444cd3a2db6}{print\-\_\-building} (S\-D\-L\-\_\-\-Surface $\ast$window, short x\mbox{[}$\,$\mbox{]}, short y\mbox{[}$\,$\mbox{]}, int taille, char $\ast$s)
+\item 
+void \hyperlink{render_8c_aee139c5444eb9249a6d9c09dc7c3ed1c_aee139c5444eb9249a6d9c09dc7c3ed1c}{print\-\_\-grass\-\_\-area} (S\-D\-L\-\_\-\-Surface $\ast$window, short x\mbox{[}$\,$\mbox{]}, short y\mbox{[}$\,$\mbox{]}, int taille, char $\ast$s)
+\item 
+void \hyperlink{render_8c_a45511f6ea2526b4a8c7726d8762d855b_a45511f6ea2526b4a8c7726d8762d855b}{print\-\_\-road\-\_\-by\-\_\-type} (S\-D\-L\-\_\-\-Surface $\ast$window, short x\mbox{[}$\,$\mbox{]}, short y\mbox{[}$\,$\mbox{]}, int taille, char $\ast$s, int type)
+\item 
+void \hyperlink{render_8c_a5670d7ba719a0c21e009b86bcc8bf2db_a5670d7ba719a0c21e009b86bcc8bf2db}{print\-\_\-cycleway} (S\-D\-L\-\_\-\-Surface $\ast$window, short x\mbox{[}$\,$\mbox{]}, short y\mbox{[}$\,$\mbox{]}, int taille)
+\item 
+S\-D\-L\-\_\-\-Rect \hyperlink{render_8c_a95aae9d648df375ce8d5e915e0fb0785_a95aae9d648df375ce8d5e915e0fb0785}{get\-\_\-pos\-\_\-polygon} (short x\mbox{[}$\,$\mbox{]}, short y\mbox{[}$\,$\mbox{]}, int taille)
+\item 
+S\-D\-L\-\_\-\-Rect \hyperlink{render_8c_afcc77defa62bc976f5987c47db577833_afcc77defa62bc976f5987c47db577833}{get\-\_\-pos\-\_\-line} (short x\mbox{[}$\,$\mbox{]}, short y\mbox{[}$\,$\mbox{]}, int taille)
+\item 
+int \hyperlink{render_8c_a9d007f754c625a7996bff88c1375c1b1_a9d007f754c625a7996bff88c1375c1b1}{get\-\_\-center\-\_\-y\-\_\-polygon} (short x\mbox{[}$\,$\mbox{]}, short y\mbox{[}$\,$\mbox{]}, int taille)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{render_8c_a33dcd462e888b992eb57ed8e69116f8e_a33dcd462e888b992eb57ed8e69116f8e}{\index{render.\-c@{render.\-c}!background\-\_\-menu@{background\-\_\-menu}}
+\index{background\-\_\-menu@{background\-\_\-menu}!render.c@{render.\-c}}
+\subsubsection[{background\-\_\-menu}]{\setlength{\rightskip}{0pt plus 5cm}void background\-\_\-menu (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a33dcd462e888b992eb57ed8e69116f8e_a33dcd462e888b992eb57ed8e69116f8e}
+\hypertarget{render_8c_a9d007f754c625a7996bff88c1375c1b1_a9d007f754c625a7996bff88c1375c1b1}{\index{render.\-c@{render.\-c}!get\-\_\-center\-\_\-y\-\_\-polygon@{get\-\_\-center\-\_\-y\-\_\-polygon}}
+\index{get\-\_\-center\-\_\-y\-\_\-polygon@{get\-\_\-center\-\_\-y\-\_\-polygon}!render.c@{render.\-c}}
+\subsubsection[{get\-\_\-center\-\_\-y\-\_\-polygon}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-center\-\_\-y\-\_\-polygon (
+\begin{DoxyParamCaption}
+\item[{short}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{short}]{y\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a9d007f754c625a7996bff88c1375c1b1_a9d007f754c625a7996bff88c1375c1b1}
+\hypertarget{render_8c_afcc77defa62bc976f5987c47db577833_afcc77defa62bc976f5987c47db577833}{\index{render.\-c@{render.\-c}!get\-\_\-pos\-\_\-line@{get\-\_\-pos\-\_\-line}}
+\index{get\-\_\-pos\-\_\-line@{get\-\_\-pos\-\_\-line}!render.c@{render.\-c}}
+\subsubsection[{get\-\_\-pos\-\_\-line}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Rect get\-\_\-pos\-\_\-line (
+\begin{DoxyParamCaption}
+\item[{short}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{short}]{y\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}\label{render_8c_afcc77defa62bc976f5987c47db577833_afcc77defa62bc976f5987c47db577833}
+\hypertarget{render_8c_a95aae9d648df375ce8d5e915e0fb0785_a95aae9d648df375ce8d5e915e0fb0785}{\index{render.\-c@{render.\-c}!get\-\_\-pos\-\_\-polygon@{get\-\_\-pos\-\_\-polygon}}
+\index{get\-\_\-pos\-\_\-polygon@{get\-\_\-pos\-\_\-polygon}!render.c@{render.\-c}}
+\subsubsection[{get\-\_\-pos\-\_\-polygon}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Rect get\-\_\-pos\-\_\-polygon (
+\begin{DoxyParamCaption}
+\item[{short}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{short}]{y\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a95aae9d648df375ce8d5e915e0fb0785_a95aae9d648df375ce8d5e915e0fb0785}
+\hypertarget{render_8c_a65a16a681c97488405248526c5bf4895_a65a16a681c97488405248526c5bf4895}{\index{render.\-c@{render.\-c}!init\-\_\-window@{init\-\_\-window}}
+\index{init\-\_\-window@{init\-\_\-window}!render.c@{render.\-c}}
+\subsubsection[{init\-\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}void init\-\_\-window (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a65a16a681c97488405248526c5bf4895_a65a16a681c97488405248526c5bf4895}
+\hypertarget{render_8c_a9c70295b5faa27756045c5f078b629b4_a9c70295b5faa27756045c5f078b629b4}{\index{render.\-c@{render.\-c}!is\-\_\-running@{is\-\_\-running}}
+\index{is\-\_\-running@{is\-\_\-running}!render.c@{render.\-c}}
+\subsubsection[{is\-\_\-running}]{\setlength{\rightskip}{0pt plus 5cm}void is\-\_\-running (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a9c70295b5faa27756045c5f078b629b4_a9c70295b5faa27756045c5f078b629b4}
+\hypertarget{render_8c_a8e186ceed4f50d19f71753f927142637_a8e186ceed4f50d19f71753f927142637}{\index{render.\-c@{render.\-c}!moov\-\_\-down@{moov\-\_\-down}}
+\index{moov\-\_\-down@{moov\-\_\-down}!render.c@{render.\-c}}
+\subsubsection[{moov\-\_\-down}]{\setlength{\rightskip}{0pt plus 5cm}void moov\-\_\-down (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a8e186ceed4f50d19f71753f927142637_a8e186ceed4f50d19f71753f927142637}
+\hypertarget{render_8c_a80fa3520619ec673d7b37f22d1f1a535_a80fa3520619ec673d7b37f22d1f1a535}{\index{render.\-c@{render.\-c}!moov\-\_\-left@{moov\-\_\-left}}
+\index{moov\-\_\-left@{moov\-\_\-left}!render.c@{render.\-c}}
+\subsubsection[{moov\-\_\-left}]{\setlength{\rightskip}{0pt plus 5cm}void moov\-\_\-left (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a80fa3520619ec673d7b37f22d1f1a535_a80fa3520619ec673d7b37f22d1f1a535}
+\hypertarget{render_8c_a856dfd54641b1462de6ad670423b68a8_a856dfd54641b1462de6ad670423b68a8}{\index{render.\-c@{render.\-c}!moov\-\_\-right@{moov\-\_\-right}}
+\index{moov\-\_\-right@{moov\-\_\-right}!render.c@{render.\-c}}
+\subsubsection[{moov\-\_\-right}]{\setlength{\rightskip}{0pt plus 5cm}void moov\-\_\-right (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a856dfd54641b1462de6ad670423b68a8_a856dfd54641b1462de6ad670423b68a8}
+\hypertarget{render_8c_a4c3b559b48b14647bf08fa2907942aca_a4c3b559b48b14647bf08fa2907942aca}{\index{render.\-c@{render.\-c}!moov\-\_\-up@{moov\-\_\-up}}
+\index{moov\-\_\-up@{moov\-\_\-up}!render.c@{render.\-c}}
+\subsubsection[{moov\-\_\-up}]{\setlength{\rightskip}{0pt plus 5cm}void moov\-\_\-up (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a4c3b559b48b14647bf08fa2907942aca_a4c3b559b48b14647bf08fa2907942aca}
+\hypertarget{render_8c_a8735ee462660001e1b2ee444cd3a2db6_a8735ee462660001e1b2ee444cd3a2db6}{\index{render.\-c@{render.\-c}!print\-\_\-building@{print\-\_\-building}}
+\index{print\-\_\-building@{print\-\_\-building}!render.c@{render.\-c}}
+\subsubsection[{print\-\_\-building}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-building (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window, }
+\item[{short}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{short}]{y\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{taille, }
+\item[{char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a8735ee462660001e1b2ee444cd3a2db6_a8735ee462660001e1b2ee444cd3a2db6}
+\hypertarget{render_8c_a5670d7ba719a0c21e009b86bcc8bf2db_a5670d7ba719a0c21e009b86bcc8bf2db}{\index{render.\-c@{render.\-c}!print\-\_\-cycleway@{print\-\_\-cycleway}}
+\index{print\-\_\-cycleway@{print\-\_\-cycleway}!render.c@{render.\-c}}
+\subsubsection[{print\-\_\-cycleway}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-cycleway (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window, }
+\item[{short}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{short}]{y\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{taille}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a5670d7ba719a0c21e009b86bcc8bf2db_a5670d7ba719a0c21e009b86bcc8bf2db}
+\hypertarget{render_8c_aee139c5444eb9249a6d9c09dc7c3ed1c_aee139c5444eb9249a6d9c09dc7c3ed1c}{\index{render.\-c@{render.\-c}!print\-\_\-grass\-\_\-area@{print\-\_\-grass\-\_\-area}}
+\index{print\-\_\-grass\-\_\-area@{print\-\_\-grass\-\_\-area}!render.c@{render.\-c}}
+\subsubsection[{print\-\_\-grass\-\_\-area}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-grass\-\_\-area (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window, }
+\item[{short}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{short}]{y\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{taille, }
+\item[{char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{render_8c_aee139c5444eb9249a6d9c09dc7c3ed1c_aee139c5444eb9249a6d9c09dc7c3ed1c}
+\hypertarget{render_8c_a45511f6ea2526b4a8c7726d8762d855b_a45511f6ea2526b4a8c7726d8762d855b}{\index{render.\-c@{render.\-c}!print\-\_\-road\-\_\-by\-\_\-type@{print\-\_\-road\-\_\-by\-\_\-type}}
+\index{print\-\_\-road\-\_\-by\-\_\-type@{print\-\_\-road\-\_\-by\-\_\-type}!render.c@{render.\-c}}
+\subsubsection[{print\-\_\-road\-\_\-by\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-road\-\_\-by\-\_\-type (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window, }
+\item[{short}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{short}]{y\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{taille, }
+\item[{char $\ast$}]{s, }
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a45511f6ea2526b4a8c7726d8762d855b_a45511f6ea2526b4a8c7726d8762d855b}
+\hypertarget{render_8c_a4794c7c3d2fb1552e202c5fc9727a6f1_a4794c7c3d2fb1552e202c5fc9727a6f1}{\index{render.\-c@{render.\-c}!print\-\_\-water\-\_\-area@{print\-\_\-water\-\_\-area}}
+\index{print\-\_\-water\-\_\-area@{print\-\_\-water\-\_\-area}!render.c@{render.\-c}}
+\subsubsection[{print\-\_\-water\-\_\-area}]{\setlength{\rightskip}{0pt plus 5cm}void print\-\_\-water\-\_\-area (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window, }
+\item[{short}]{x\mbox{[}$\,$\mbox{]}, }
+\item[{short}]{y\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{taille, }
+\item[{char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a4794c7c3d2fb1552e202c5fc9727a6f1_a4794c7c3d2fb1552e202c5fc9727a6f1}
+\hypertarget{render_8c_a7fad0bceee2d4417b715e090a15c796f_a7fad0bceee2d4417b715e090a15c796f}{\index{render.\-c@{render.\-c}!restart\-\_\-window@{restart\-\_\-window}}
+\index{restart\-\_\-window@{restart\-\_\-window}!render.c@{render.\-c}}
+\subsubsection[{restart\-\_\-window}]{\setlength{\rightskip}{0pt plus 5cm}void restart\-\_\-window (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a7fad0bceee2d4417b715e090a15c796f_a7fad0bceee2d4417b715e090a15c796f}
+\hypertarget{render_8c_aa4fd5f1de813e9bf7d38968394ef252f_aa4fd5f1de813e9bf7d38968394ef252f}{\index{render.\-c@{render.\-c}!sdl\-\_\-main@{sdl\-\_\-main}}
+\index{sdl\-\_\-main@{sdl\-\_\-main}!render.c@{render.\-c}}
+\subsubsection[{sdl\-\_\-main}]{\setlength{\rightskip}{0pt plus 5cm}void sdl\-\_\-main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{render_8c_aa4fd5f1de813e9bf7d38968394ef252f_aa4fd5f1de813e9bf7d38968394ef252f}
+\hypertarget{render_8c_aba6d10cb993ac722fdeacb73551f7742_aba6d10cb993ac722fdeacb73551f7742}{\index{render.\-c@{render.\-c}!text\-\_\-menu@{text\-\_\-menu}}
+\index{text\-\_\-menu@{text\-\_\-menu}!render.c@{render.\-c}}
+\subsubsection[{text\-\_\-menu}]{\setlength{\rightskip}{0pt plus 5cm}void text\-\_\-menu (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_aba6d10cb993ac722fdeacb73551f7742_aba6d10cb993ac722fdeacb73551f7742}
+\hypertarget{render_8c_acea5f2a8b0f7505c094998b3b51c15ff_acea5f2a8b0f7505c094998b3b51c15ff}{\index{render.\-c@{render.\-c}!zoom\-\_\-in@{zoom\-\_\-in}}
+\index{zoom\-\_\-in@{zoom\-\_\-in}!render.c@{render.\-c}}
+\subsubsection[{zoom\-\_\-in}]{\setlength{\rightskip}{0pt plus 5cm}void zoom\-\_\-in (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_acea5f2a8b0f7505c094998b3b51c15ff_acea5f2a8b0f7505c094998b3b51c15ff}
+\hypertarget{render_8c_a9147ae27acf84eb3d4dea944eb309208_a9147ae27acf84eb3d4dea944eb309208}{\index{render.\-c@{render.\-c}!zoom\-\_\-out@{zoom\-\_\-out}}
+\index{zoom\-\_\-out@{zoom\-\_\-out}!render.c@{render.\-c}}
+\subsubsection[{zoom\-\_\-out}]{\setlength{\rightskip}{0pt plus 5cm}void zoom\-\_\-out (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{render_8c_a9147ae27acf84eb3d4dea944eb309208_a9147ae27acf84eb3d4dea944eb309208}

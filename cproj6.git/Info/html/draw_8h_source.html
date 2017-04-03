@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Cproj:  Fichier source de draw.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Cproj
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Rendu de Map openstreetMap</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">draw.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DRAW_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DRAW_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8c.html#a4794c7c3d2fb1552e202c5fc9727a6f1">print_water_area</a>(SDL_Surface *, <span class="keywordtype">short</span> *, <span class="keywordtype">short</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8c.html#a8735ee462660001e1b2ee444cd3a2db6">print_building</a>(SDL_Surface *, <span class="keywordtype">short</span> *, <span class="keywordtype">short</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8c.html#aee139c5444eb9249a6d9c09dc7c3ed1c">print_grass_area</a>(SDL_Surface *, <span class="keywordtype">short</span> *, <span class="keywordtype">short</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">void</span> print_brown_area(SDL_Surface *, <span class="keywordtype">short</span> *, <span class="keywordtype">short</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8c.html#a45511f6ea2526b4a8c7726d8762d855b">print_road_by_type</a>(SDL_Surface *, <span class="keywordtype">short</span> *, <span class="keywordtype">short</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> *, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8c.html#aebd7b481ea3cd7203795dc9f8ab3e631">print_cycleway</a>(SDL_Surface *, <span class="keywordtype">short</span> *, <span class="keywordtype">short</span> *, <span class="keywordtype">int</span> );</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8c.html#a2e73f5f50d32ec5df48f4a097f5573be">print_image_render</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, SDL_Surface *);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8c.html#a69cbe20d8c902b02dadc5faf23e65a26">print_element</a>(SDL_Surface *, <span class="keywordtype">short</span> *, <span class="keywordtype">short</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">char</span> *, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">void</span> <a class="code" href="draw_8c.html#a114c1f5f6684296561647dcae621490d">print_inner</a>(SDL_Surface *, <span class="keywordtype">short</span> *, <span class="keywordtype">short</span> *,<span class="keywordtype">int</span> );</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="draw_8c_html_a8735ee462660001e1b2ee444cd3a2db6"><div class="ttname"><a href="draw_8c.html#a8735ee462660001e1b2ee444cd3a2db6">print_building</a></div><div class="ttdeci">void print_building(SDL_Surface *window, short x[], short y[], int taille, char *s)</div><div class="ttdoc">Dessine les batiments. </div><div class="ttdef"><b>Definition:</b> draw.c:47</div></div>
+<div class="ttc" id="draw_8c_html_aebd7b481ea3cd7203795dc9f8ab3e631"><div class="ttname"><a href="draw_8c.html#aebd7b481ea3cd7203795dc9f8ab3e631">print_cycleway</a></div><div class="ttdeci">void print_cycleway(SDL_Surface *window, short x[], short y[], int taille)</div><div class="ttdoc">Dessine les pistes cyclables. </div><div class="ttdef"><b>Definition:</b> draw.c:268</div></div>
+<div class="ttc" id="draw_8c_html_a2e73f5f50d32ec5df48f4a097f5573be"><div class="ttname"><a href="draw_8c.html#a2e73f5f50d32ec5df48f4a097f5573be">print_image_render</a></div><div class="ttdeci">void print_image_render(int type, int x, int y, SDL_Surface *window)</div><div class="ttdoc">Affiche les images. </div><div class="ttdef"><b>Definition:</b> draw.c:295</div></div>
+<div class="ttc" id="draw_8c_html_a4794c7c3d2fb1552e202c5fc9727a6f1"><div class="ttname"><a href="draw_8c.html#a4794c7c3d2fb1552e202c5fc9727a6f1">print_water_area</a></div><div class="ttdeci">void print_water_area(SDL_Surface *window, short x[], short y[], int taille, char *s)</div><div class="ttdoc">Dessine les zones d&#39;eau. </div><div class="ttdef"><b>Definition:</b> draw.c:23</div></div>
+<div class="ttc" id="draw_8c_html_a45511f6ea2526b4a8c7726d8762d855b"><div class="ttname"><a href="draw_8c.html#a45511f6ea2526b4a8c7726d8762d855b">print_road_by_type</a></div><div class="ttdeci">void print_road_by_type(SDL_Surface *window, short x[], short y[], int taille, char *s, int type)</div><div class="ttdoc">Dessine les chemins selon leur type. </div><div class="ttdef"><b>Definition:</b> draw.c:146</div></div>
+<div class="ttc" id="draw_8c_html_aee139c5444eb9249a6d9c09dc7c3ed1c"><div class="ttname"><a href="draw_8c.html#aee139c5444eb9249a6d9c09dc7c3ed1c">print_grass_area</a></div><div class="ttdeci">void print_grass_area(SDL_Surface *window, short x[], short y[], int taille, char *s)</div><div class="ttdoc">Dessine les espaces verts. </div><div class="ttdef"><b>Definition:</b> draw.c:72</div></div>
+<div class="ttc" id="draw_8c_html_a69cbe20d8c902b02dadc5faf23e65a26"><div class="ttname"><a href="draw_8c.html#a69cbe20d8c902b02dadc5faf23e65a26">print_element</a></div><div class="ttdeci">void print_element(SDL_Surface *window, short x[], short y[], int taille, char *name, int type)</div><div class="ttdoc">Affiche elements selon leur type. </div><div class="ttdef"><b>Definition:</b> draw.c:316</div></div>
+<div class="ttc" id="draw_8c_html_a114c1f5f6684296561647dcae621490d"><div class="ttname"><a href="draw_8c.html#a114c1f5f6684296561647dcae621490d">print_inner</a></div><div class="ttdeci">void print_inner(SDL_Surface *window, short x[], short y[], int taille)</div><div class="ttdoc">Affiche Inner. </div><div class="ttdef"><b>Definition:</b> draw.c:348</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 17 Avril 2016 23:07:40 pour Cproj par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

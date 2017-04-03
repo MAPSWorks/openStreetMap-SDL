@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>Cproj:  Fichier source de element.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Cproj
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Rendu de Map openstreetMap</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Structures&#160;de&#160;données</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Variables&#160;globale</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Structures de données</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">element.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;constante.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef ELEMENT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ELEMENT_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="keywordtype">int</span> size_tab_node;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keywordtype">int</span> size_tab_way;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">int</span> size_tab_relation;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_tag.html">Tag</a> <a class="code" href="struct_tag.html">Tag</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_tag.html">   16</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_tag.html">Tag</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_tag.html#a85a5c9a236964d95fd718de540a394d3">   18</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="struct_tag.html#a85a5c9a236964d95fd718de540a394d3">k</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_tag.html#a5f5b1c0720e12aed95287c86052c9c9d">   19</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="struct_tag.html#a5f5b1c0720e12aed95287c86052c9c9d">v</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_node.html">Node</a> <a class="code" href="struct_node.html">Node</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_node.html">   30</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_node.html">Node</a>{</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_node.html#a7441ef0865bcb3db9b8064dd7375c1ea">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_node.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a>; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_node.html#a7972334534f68166121a6e51b0aac2d6">   32</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_node.html#a7972334534f68166121a6e51b0aac2d6">lat</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_node.html#aa96391e04b5977c50b96d77bea86a01d">   33</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="struct_node.html#aa96391e04b5977c50b96d77bea86a01d">lon</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_node.html#a8b2692ef069eeba25cd6a18708116d27">   34</a></span>&#160;    <a class="code" href="struct_tag.html">Tag</a> <a class="code" href="struct_node.html#a8b2692ef069eeba25cd6a18708116d27">list_tag</a>[MAX_SIZE_TAG]; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structbounds.html">bounds</a> <a class="code" href="structbounds.html">bounds</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structbounds.html">   45</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structbounds.html">bounds</a>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structbounds.html#a037868ceabb80ff01a9a3e9d05ae4abd">   47</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structbounds.html#a037868ceabb80ff01a9a3e9d05ae4abd">maxlat</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">double</span> minlat;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">double</span> maxlon;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structbounds.html#a59ff75088f2d17feafb6a6cb7b52cc0c">   50</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structbounds.html#a59ff75088f2d17feafb6a6cb7b52cc0c">minlon</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">double</span> true_maxlat;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">double</span> true_minlat;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">double</span> true_maxlon;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="structbounds.html#ae34f6f1fe52a1595b1bfda62ffd748d0">   55</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structbounds.html#ae34f6f1fe52a1595b1bfda62ffd748d0">true_minlon</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">double</span> center_x;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structbounds.html#ad489aeccafdbcbae7387be96db85f768">   58</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="structbounds.html#ad489aeccafdbcbae7387be96db85f768">center_y</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">double</span> rayon_x;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">double</span> rayon_y;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_way.html">Way</a> <a class="code" href="struct_way.html">Way</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="struct_way.html">   72</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_way.html">Way</a>{</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="struct_way.html#a7441ef0865bcb3db9b8064dd7375c1ea">   73</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_way.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="struct_way.html#ac85d5511fdb8d162a7278bfb440ae420">   74</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_way.html#ac85d5511fdb8d162a7278bfb440ae420">order</a>; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="struct_way.html#a429251d389c103ce2110c655f4925a2b">   75</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_way.html#a429251d389c103ce2110c655f4925a2b">list_node</a>[MAX_SIZE_NODE_IN_WAY];</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="struct_way.html#a8b2692ef069eeba25cd6a18708116d27">   76</a></span>&#160;    <a class="code" href="struct_tag.html">Tag</a> <a class="code" href="struct_way.html#a8b2692ef069eeba25cd6a18708116d27">list_tag</a>[MAX_SIZE_TAG];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_member.html">Member</a> <a class="code" href="struct_member.html">Member</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="struct_member.html">   87</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_member.html">Member</a>{</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="struct_member.html#a23506fc4821ab6d9671f3e6222591a96">   88</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="struct_member.html#a23506fc4821ab6d9671f3e6222591a96">type</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="struct_member.html#adb528a1cb1ca190150183394d082590d">   89</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_member.html#adb528a1cb1ca190150183394d082590d">ref</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="struct_member.html#a15bcddafa57ebe7ee6d1125205c171fc">   90</a></span>&#160;    <span class="keywordtype">char</span> *<a class="code" href="struct_member.html#a15bcddafa57ebe7ee6d1125205c171fc">role</a>; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_relation.html">Relation</a> <a class="code" href="struct_relation.html">Relation</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="struct_relation.html">  101</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_relation.html">Relation</a>{</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="struct_relation.html#a7441ef0865bcb3db9b8064dd7375c1ea">  102</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct_relation.html#a7441ef0865bcb3db9b8064dd7375c1ea">id</a>; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="struct_relation.html#a8b2692ef069eeba25cd6a18708116d27">  103</a></span>&#160;  <a class="code" href="struct_tag.html">Tag</a> <a class="code" href="struct_relation.html#a8b2692ef069eeba25cd6a18708116d27">list_tag</a>[MAX_SIZE_TAG]; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="struct_relation.html#a2ebca6ff00a708b355f2ea3c7e6514cb">  104</a></span>&#160;  <a class="code" href="struct_member.html">Member</a> <a class="code" href="struct_relation.html#a2ebca6ff00a708b355f2ea3c7e6514cb">list_member</a>[MAX_SIZE_MEMBER]; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="struct_node.html">Node</a>* tab_node;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<a class="code" href="struct_way.html">Way</a>* tab_way;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="struct_relation.html">Relation</a>* tab_relation;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="structbounds.html">bounds</a> mbounds;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">void</span> init_tabs(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keywordtype">void</span> add_node(<span class="keywordtype">int</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keywordtype">void</span> add_way(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span> add_relation(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keywordtype">void</span> add_bounds(<span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>, <span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">void</span> add_tag_in_node(<span class="keywordtype">char</span> *, <span class="keywordtype">char</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keywordtype">void</span> add_tag_in_way(<span class="keywordtype">char</span> *, <span class="keywordtype">char</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">void</span> add_one_idnode_in_way(<span class="keywordtype">int</span> , <span class="keywordtype">int</span> , <span class="keywordtype">int</span> );</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">void</span> add_one_member(<span class="keywordtype">char</span> *, <span class="keywordtype">int</span> , <span class="keywordtype">char</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> add_tag_in_relation(<span class="keywordtype">char</span> *, <span class="keywordtype">char</span> *, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> close_tabs();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">int</span> compare_node(<span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">int</span> compare_way_by_id(<span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">int</span> compare_way_by_order(<span class="keyword">const</span> <span class="keywordtype">void</span> *, <span class="keyword">const</span> <span class="keywordtype">void</span> *);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span> tab_node_sort();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span> tab_way_sort_by_id();</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">void</span> tab_way_sort_by_order();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keywordtype">int</span> search_node_i(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">int</span> search_way_i(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">double</span> convert_gps_to_meters(<span class="keywordtype">short</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">int</span> convert_lat_to_pixel(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="keywordtype">int</span> convert_lon_to_pixel(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="keywordtype">void</span> add_order_way(<span class="keywordtype">char</span> *, <span class="keywordtype">char</span>*, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">int</span> get_order_way(<span class="keywordtype">char</span>*, <span class="keywordtype">char</span>*);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keywordtype">void</span> check_order_way(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor"></span></div>
+<div class="ttc" id="struct_way_html_ac85d5511fdb8d162a7278bfb440ae420"><div class="ttname"><a href="struct_way.html#ac85d5511fdb8d162a7278bfb440ae420">Way::order</a></div><div class="ttdeci">int order</div><div class="ttdef"><b>Definition:</b> element.h:74</div></div>
+<div class="ttc" id="struct_node_html_aa96391e04b5977c50b96d77bea86a01d"><div class="ttname"><a href="struct_node.html#aa96391e04b5977c50b96d77bea86a01d">Node::lon</a></div><div class="ttdeci">double lon</div><div class="ttdef"><b>Definition:</b> element.h:33</div></div>
+<div class="ttc" id="struct_member_html_a15bcddafa57ebe7ee6d1125205c171fc"><div class="ttname"><a href="struct_member.html#a15bcddafa57ebe7ee6d1125205c171fc">Member::role</a></div><div class="ttdeci">char * role</div><div class="ttdef"><b>Definition:</b> element.h:90</div></div>
+<div class="ttc" id="struct_way_html_a7441ef0865bcb3db9b8064dd7375c1ea"><div class="ttname"><a href="struct_way.html#a7441ef0865bcb3db9b8064dd7375c1ea">Way::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> element.h:73</div></div>
+<div class="ttc" id="struct_tag_html"><div class="ttname"><a href="struct_tag.html">Tag</a></div><div class="ttdoc">Objet contenant un Tag(clé/val). </div><div class="ttdef"><b>Definition:</b> element.h:16</div></div>
+<div class="ttc" id="structbounds_html_ae34f6f1fe52a1595b1bfda62ffd748d0"><div class="ttname"><a href="structbounds.html#ae34f6f1fe52a1595b1bfda62ffd748d0">bounds::true_minlon</a></div><div class="ttdeci">double true_minlon</div><div class="ttdef"><b>Definition:</b> element.h:55</div></div>
+<div class="ttc" id="struct_node_html_a8b2692ef069eeba25cd6a18708116d27"><div class="ttname"><a href="struct_node.html#a8b2692ef069eeba25cd6a18708116d27">Node::list_tag</a></div><div class="ttdeci">Tag list_tag[MAX_SIZE_TAG]</div><div class="ttdef"><b>Definition:</b> element.h:34</div></div>
+<div class="ttc" id="structbounds_html_a59ff75088f2d17feafb6a6cb7b52cc0c"><div class="ttname"><a href="structbounds.html#a59ff75088f2d17feafb6a6cb7b52cc0c">bounds::minlon</a></div><div class="ttdeci">double minlon</div><div class="ttdef"><b>Definition:</b> element.h:50</div></div>
+<div class="ttc" id="struct_relation_html_a2ebca6ff00a708b355f2ea3c7e6514cb"><div class="ttname"><a href="struct_relation.html#a2ebca6ff00a708b355f2ea3c7e6514cb">Relation::list_member</a></div><div class="ttdeci">Member list_member[MAX_SIZE_MEMBER]</div><div class="ttdef"><b>Definition:</b> element.h:104</div></div>
+<div class="ttc" id="struct_relation_html_a8b2692ef069eeba25cd6a18708116d27"><div class="ttname"><a href="struct_relation.html#a8b2692ef069eeba25cd6a18708116d27">Relation::list_tag</a></div><div class="ttdeci">Tag list_tag[MAX_SIZE_TAG]</div><div class="ttdef"><b>Definition:</b> element.h:103</div></div>
+<div class="ttc" id="struct_member_html_adb528a1cb1ca190150183394d082590d"><div class="ttname"><a href="struct_member.html#adb528a1cb1ca190150183394d082590d">Member::ref</a></div><div class="ttdeci">int ref</div><div class="ttdef"><b>Definition:</b> element.h:89</div></div>
+<div class="ttc" id="structbounds_html_ad489aeccafdbcbae7387be96db85f768"><div class="ttname"><a href="structbounds.html#ad489aeccafdbcbae7387be96db85f768">bounds::center_y</a></div><div class="ttdeci">double center_y</div><div class="ttdef"><b>Definition:</b> element.h:58</div></div>
+<div class="ttc" id="structbounds_html"><div class="ttname"><a href="structbounds.html">bounds</a></div><div class="ttdoc">Contient les données de la map et de l&#39;écran. </div><div class="ttdef"><b>Definition:</b> element.h:45</div></div>
+<div class="ttc" id="structbounds_html_a037868ceabb80ff01a9a3e9d05ae4abd"><div class="ttname"><a href="structbounds.html#a037868ceabb80ff01a9a3e9d05ae4abd">bounds::maxlat</a></div><div class="ttdeci">double maxlat</div><div class="ttdef"><b>Definition:</b> element.h:47</div></div>
+<div class="ttc" id="struct_way_html"><div class="ttname"><a href="struct_way.html">Way</a></div><div class="ttdoc">Contient une Way(identifiant/order/liste des noeuds et liste des tag) </div><div class="ttdef"><b>Definition:</b> element.h:72</div></div>
+<div class="ttc" id="struct_tag_html_a85a5c9a236964d95fd718de540a394d3"><div class="ttname"><a href="struct_tag.html#a85a5c9a236964d95fd718de540a394d3">Tag::k</a></div><div class="ttdeci">char * k</div><div class="ttdef"><b>Definition:</b> element.h:18</div></div>
+<div class="ttc" id="struct_way_html_a8b2692ef069eeba25cd6a18708116d27"><div class="ttname"><a href="struct_way.html#a8b2692ef069eeba25cd6a18708116d27">Way::list_tag</a></div><div class="ttdeci">Tag list_tag[MAX_SIZE_TAG]</div><div class="ttdef"><b>Definition:</b> element.h:76</div></div>
+<div class="ttc" id="struct_tag_html_a5f5b1c0720e12aed95287c86052c9c9d"><div class="ttname"><a href="struct_tag.html#a5f5b1c0720e12aed95287c86052c9c9d">Tag::v</a></div><div class="ttdeci">char * v</div><div class="ttdef"><b>Definition:</b> element.h:19</div></div>
+<div class="ttc" id="struct_member_html_a23506fc4821ab6d9671f3e6222591a96"><div class="ttname"><a href="struct_member.html#a23506fc4821ab6d9671f3e6222591a96">Member::type</a></div><div class="ttdeci">char * type</div><div class="ttdef"><b>Definition:</b> element.h:88</div></div>
+<div class="ttc" id="struct_node_html"><div class="ttname"><a href="struct_node.html">Node</a></div><div class="ttdoc">Objet contenant un Noeud (identifiant/position/Tag. </div><div class="ttdef"><b>Definition:</b> element.h:30</div></div>
+<div class="ttc" id="struct_relation_html"><div class="ttname"><a href="struct_relation.html">Relation</a></div><div class="ttdoc">Contient une Relation(identifiant way/role de la way) </div><div class="ttdef"><b>Definition:</b> element.h:101</div></div>
+<div class="ttc" id="struct_way_html_a429251d389c103ce2110c655f4925a2b"><div class="ttname"><a href="struct_way.html#a429251d389c103ce2110c655f4925a2b">Way::list_node</a></div><div class="ttdeci">int list_node[MAX_SIZE_NODE_IN_WAY]</div><div class="ttdef"><b>Definition:</b> element.h:75</div></div>
+<div class="ttc" id="struct_member_html"><div class="ttname"><a href="struct_member.html">Member</a></div><div class="ttdoc">Contient un Membre d&#39;une Relation(identifiant way/role de la way) </div><div class="ttdef"><b>Definition:</b> element.h:87</div></div>
+<div class="ttc" id="struct_relation_html_a7441ef0865bcb3db9b8064dd7375c1ea"><div class="ttname"><a href="struct_relation.html#a7441ef0865bcb3db9b8064dd7375c1ea">Relation::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> element.h:102</div></div>
+<div class="ttc" id="struct_node_html_a7972334534f68166121a6e51b0aac2d6"><div class="ttname"><a href="struct_node.html#a7972334534f68166121a6e51b0aac2d6">Node::lat</a></div><div class="ttdeci">double lat</div><div class="ttdef"><b>Definition:</b> element.h:32</div></div>
+<div class="ttc" id="struct_node_html_a7441ef0865bcb3db9b8064dd7375c1ea"><div class="ttname"><a href="struct_node.html#a7441ef0865bcb3db9b8064dd7375c1ea">Node::id</a></div><div class="ttdeci">int id</div><div class="ttdef"><b>Definition:</b> element.h:31</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Dimanche 17 Avril 2016 23:07:40 pour Cproj par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

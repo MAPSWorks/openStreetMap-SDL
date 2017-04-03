@@ -1,0 +1,599 @@
+\hypertarget{element_8h}{\section{Référence du fichier element.\-h}
+\label{element_8h}\index{element.\-h@{element.\-h}}
+}
+{\ttfamily \#include \char`\"{}constante.\-h\char`\"{}}\\*
+\subsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_tag}{Tag}
+\item 
+struct \hyperlink{struct_node}{Node}
+\item 
+struct \hyperlink{structbounds}{bounds}
+\item 
+struct \hyperlink{struct_way}{Way}
+\end{DoxyCompactItemize}
+\subsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_tag}{Tag} \hyperlink{element_8h_a84f34726c98212bf453180fbf52f65f5_a84f34726c98212bf453180fbf52f65f5}{Tag}
+\item 
+typedef struct \hyperlink{struct_node}{Node} \hyperlink{element_8h_a3b09f37e675bcd48a01bf22155996872_a3b09f37e675bcd48a01bf22155996872}{Node}
+\item 
+typedef struct \hyperlink{structbounds}{bounds} \hyperlink{element_8h_aebc4b957b013dcae33a8224bdefdafe1_aebc4b957b013dcae33a8224bdefdafe1}{bounds}
+\item 
+typedef struct \hyperlink{struct_way}{Way} \hyperlink{element_8h_a18e74773b76e1b35706a046c3ec1c07a_a18e74773b76e1b35706a046c3ec1c07a}{Way}
+\begin{DoxyCompactList}\small\item\em Déclaration de nos tableaux de way/node
+
+Elle initialise les Var Globales des tailles des tableaux de structure Elle iniitialise les tableaux de structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{element_8h_a1915249eb5cb37898eeb7ec9a2c2b86d_a1915249eb5cb37898eeb7ec9a2c2b86d}{init\-\_\-tabs} (int nb\-\_\-node, int nb\-\_\-way)
+\item 
+void \hyperlink{element_8h_a0463cb753eac4e85f7896f4d104fd173_a0463cb753eac4e85f7896f4d104fd173}{add\-\_\-node} (int id, double lat, double lon, int pos)
+\begin{DoxyCompactList}\small\item\em Initialise le node avec {\itshape id}, {\itshape lat}, {\itshape lon} à position {\itshape pos}. \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_aed608cc0caae841ed6b8013403241dae_aed608cc0caae841ed6b8013403241dae}{add\-\_\-way} (int id, int pos)
+\begin{DoxyCompactList}\small\item\em Initialise la \hyperlink{struct_way}{Way} avec {\itshape id}, à position {\itshape pos}. \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_a8d0bb383a1109afa0de50bd09d477c9f_a8d0bb383a1109afa0de50bd09d477c9f}{add\-\_\-bounds} (double a, double b, double c, double d)
+\begin{DoxyCompactList}\small\item\em Initialise la bounds avec {\itshape a}, {\itshape b}, {\itshape c}, {\itshape d}. \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_a0440e83989bf9e2f031808f2a97988d3_a0440e83989bf9e2f031808f2a97988d3}{add\-\_\-tag\-\_\-in\-\_\-node} (char $\ast$k, char $\ast$v, int pos\-\_\-node, int pos\-\_\-tag)
+\begin{DoxyCompactList}\small\item\em Ajoute un \hyperlink{struct_tag}{Tag} dans le tableau de tag de la structure \hyperlink{struct_node}{Node}. \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_a7fd9c1e60e39fce975bc9d5afb516d8c_a7fd9c1e60e39fce975bc9d5afb516d8c}{add\-\_\-tag\-\_\-in\-\_\-way} (char $\ast$k, char $\ast$v, int pos\-\_\-way, int pos\-\_\-tag)
+\begin{DoxyCompactList}\small\item\em Ajoute un \hyperlink{struct_tag}{Tag} dans le tableau de tag de la structure \hyperlink{struct_way}{Way}. \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_a39ca3388a5261d7f1f417b6db8e4ad96_a39ca3388a5261d7f1f417b6db8e4ad96}{add\-\_\-one\-\_\-idnode\-\_\-in\-\_\-way} (int idnode, int pos\-\_\-way, int pos\-\_\-node)
+\begin{DoxyCompactList}\small\item\em Ajoute un identifiant de \hyperlink{struct_node}{Node} dans le tableau de \hyperlink{struct_node}{Node} de la structure \hyperlink{struct_way}{Way}. \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_acb1c6de5172f617d3d2ca9aeed40930d_acb1c6de5172f617d3d2ca9aeed40930d}{close\-\_\-tabs} ()
+\begin{DoxyCompactList}\small\item\em suppression des tableaux alloues \end{DoxyCompactList}\item 
+int \hyperlink{element_8h_a5f2178d45a3e6d9aba18317f1d35a319_a5f2178d45a3e6d9aba18317f1d35a319}{compare\-\_\-node} (const void $\ast$a, const void $\ast$b)
+\begin{DoxyCompactList}\small\item\em comparaison de \hyperlink{struct_node}{Node} \end{DoxyCompactList}\item 
+int \hyperlink{element_8h_a908e8a0d1d700301e8e47968e6ab4a14_a908e8a0d1d700301e8e47968e6ab4a14}{compare\-\_\-way} (const void $\ast$a, const void $\ast$b)
+\begin{DoxyCompactList}\small\item\em comparaison de \hyperlink{struct_way}{Way} \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_aabbbfceeeaf39e863fa7e82539ffb99b_aabbbfceeeaf39e863fa7e82539ffb99b}{tab\-\_\-node\-\_\-sort} ()
+\begin{DoxyCompactList}\small\item\em qsort() sur le tableau de \hyperlink{struct_node}{Node} \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_adeeba1f8f5687fcb1af0780e59b22acb_adeeba1f8f5687fcb1af0780e59b22acb}{tab\-\_\-way\-\_\-sort} ()
+\begin{DoxyCompactList}\small\item\em qsort() sur le tableau de \hyperlink{struct_way}{Way} \end{DoxyCompactList}\item 
+int \hyperlink{element_8h_aa6dfde1b4eb395cae36ac6e38b5a0e74_aa6dfde1b4eb395cae36ac6e38b5a0e74}{search\-\_\-node\-\_\-i} (int id\-\_\-node\-\_\-searching)
+\begin{DoxyCompactList}\small\item\em une simple recherche dichotomique sur notre tableau de \hyperlink{struct_node}{Node} \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_a1d52ded0b9f031b3de7c4ef152b7e8d1_a1d52ded0b9f031b3de7c4ef152b7e8d1}{init\-\_\-manager\-\_\-way} (S\-D\-L\-\_\-\-Surface $\ast$window)
+\begin{DoxyCompactList}\small\item\em parcours notre tableau de \hyperlink{struct_way}{Way} et les affiche un à un sur le render \end{DoxyCompactList}\item 
+double \hyperlink{element_8h_a6a727e0c32839abee18e32a16dee784e_a6a727e0c32839abee18e32a16dee784e}{convert\-\_\-gps\-\_\-to\-\_\-meters} (short a)
+\item 
+int \hyperlink{element_8h_a60b7cb646081941b2495a9a9178e5273_a60b7cb646081941b2495a9a9178e5273}{convert\-\_\-lat\-\_\-to\-\_\-pixel} (double a)
+\begin{DoxyCompactList}\small\item\em convertion de la latitude en pixel \end{DoxyCompactList}\item 
+int \hyperlink{element_8h_a55331efedf08f637da08073a9bfa5f26_a55331efedf08f637da08073a9bfa5f26}{convert\-\_\-lon\-\_\-to\-\_\-pixel} (double a)
+\begin{DoxyCompactList}\small\item\em convertion de la longitude en pixel \end{DoxyCompactList}\item 
+void \hyperlink{element_8h_a8505b3a1a5ed59545d36487d45227801_a8505b3a1a5ed59545d36487d45227801}{add\-\_\-order\-\_\-way} (char $\ast$k, char $\ast$v, int pos)
+\item 
+int \hyperlink{element_8h_a27fc54df4fd8a45a29352c2952ad5fc4_a27fc54df4fd8a45a29352c2952ad5fc4}{get\-\_\-order\-\_\-way} (char $\ast$k, char $\ast$v)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{element_8h_abdff54aa90cc086c7d8af9d94e22620b_abdff54aa90cc086c7d8af9d94e22620b}{size\-\_\-tab\-\_\-node}
+\item 
+int \hyperlink{element_8h_a80bd81c0b34972c9875039ab9f7069f1_a80bd81c0b34972c9875039ab9f7069f1}{size\-\_\-tab\-\_\-way}
+\item 
+\hyperlink{struct_node}{Node} $\ast$ \hyperlink{element_8h_a7290cb94f8a7cdc423f1a7cf2ebdab6e_a7290cb94f8a7cdc423f1a7cf2ebdab6e}{tab\-\_\-node}
+\item 
+\hyperlink{struct_way}{Way} $\ast$ \hyperlink{element_8h_a03c3bd454ae336db800fe10ff4b33533_a03c3bd454ae336db800fe10ff4b33533}{tab\-\_\-way}
+\item 
+\hyperlink{structbounds}{bounds} \hyperlink{element_8h_ab106f7adbc63c5ff758dc58a0867ea04_ab106f7adbc63c5ff758dc58a0867ea04}{mbounds}
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentation des définitions de type}
+\hypertarget{element_8h_aebc4b957b013dcae33a8224bdefdafe1_aebc4b957b013dcae33a8224bdefdafe1}{\index{element.\-h@{element.\-h}!bounds@{bounds}}
+\index{bounds@{bounds}!element.h@{element.\-h}}
+\subsubsection[{bounds}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf bounds} {\bf bounds}}}\label{element_8h_aebc4b957b013dcae33a8224bdefdafe1_aebc4b957b013dcae33a8224bdefdafe1}
+\hypertarget{element_8h_a3b09f37e675bcd48a01bf22155996872_a3b09f37e675bcd48a01bf22155996872}{\index{element.\-h@{element.\-h}!Node@{Node}}
+\index{Node@{Node}!element.h@{element.\-h}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Node} {\bf Node}}}\label{element_8h_a3b09f37e675bcd48a01bf22155996872_a3b09f37e675bcd48a01bf22155996872}
+\hypertarget{element_8h_a84f34726c98212bf453180fbf52f65f5_a84f34726c98212bf453180fbf52f65f5}{\index{element.\-h@{element.\-h}!Tag@{Tag}}
+\index{Tag@{Tag}!element.h@{element.\-h}}
+\subsubsection[{Tag}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Tag} {\bf Tag}}}\label{element_8h_a84f34726c98212bf453180fbf52f65f5_a84f34726c98212bf453180fbf52f65f5}
+\hypertarget{element_8h_a18e74773b76e1b35706a046c3ec1c07a_a18e74773b76e1b35706a046c3ec1c07a}{\index{element.\-h@{element.\-h}!Way@{Way}}
+\index{Way@{Way}!element.h@{element.\-h}}
+\subsubsection[{Way}]{\setlength{\rightskip}{0pt plus 5cm}la fonction prend les tailles des {\bf Node} {\bf Way}}}\label{element_8h_a18e74773b76e1b35706a046c3ec1c07a_a18e74773b76e1b35706a046c3ec1c07a}
+
+
+Déclaration de nos tableaux de way/node
+
+Elle initialise les Var Globales des tailles des tableaux de structure Elle iniitialise les tableaux de structure. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em nb\-\_\-node} & Le nombre de node dans le fichier X\-M\-L \\
+\hline
+{\em nb\-\_\-way} & Le nombre de ways dans le fichier X\-M\-L \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{Documentation des fonctions}
+\hypertarget{element_8h_a8d0bb383a1109afa0de50bd09d477c9f_a8d0bb383a1109afa0de50bd09d477c9f}{\index{element.\-h@{element.\-h}!add\-\_\-bounds@{add\-\_\-bounds}}
+\index{add\-\_\-bounds@{add\-\_\-bounds}!element.h@{element.\-h}}
+\subsubsection[{add\-\_\-bounds}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-bounds (
+\begin{DoxyParamCaption}
+\item[{double}]{a, }
+\item[{double}]{b, }
+\item[{double}]{c, }
+\item[{double}]{d}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a8d0bb383a1109afa0de50bd09d477c9f_a8d0bb383a1109afa0de50bd09d477c9f}
+
+
+Initialise la bounds avec {\itshape a}, {\itshape b}, {\itshape c}, {\itshape d}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & La latitude maximal \\
+\hline
+{\em b} & La longitude maximal \\
+\hline
+{\em c} & La latitude minimal \\
+\hline
+{\em d} & La longitude minimal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello
+\end{DoxyAuthor}
+La fonction initialise 2 fois les extremités en lat/lon pour la gestion du Zoom \begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_a0463cb753eac4e85f7896f4d104fd173_a0463cb753eac4e85f7896f4d104fd173}{\index{element.\-h@{element.\-h}!add\-\_\-node@{add\-\_\-node}}
+\index{add\-\_\-node@{add\-\_\-node}!element.h@{element.\-h}}
+\subsubsection[{add\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-node (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{double}]{lat, }
+\item[{double}]{lon, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a0463cb753eac4e85f7896f4d104fd173_a0463cb753eac4e85f7896f4d104fd173}
+
+
+Initialise le node avec {\itshape id}, {\itshape lat}, {\itshape lon} à position {\itshape pos}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & l'identifiant du \hyperlink{struct_node}{Node} \\
+\hline
+{\em lat} & La lattitude du \hyperlink{struct_node}{Node} \\
+\hline
+{\em lon} & La longitude du \hyperlink{struct_node}{Node} \\
+\hline
+{\em pos} & La position dans le tableau de node \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_a39ca3388a5261d7f1f417b6db8e4ad96_a39ca3388a5261d7f1f417b6db8e4ad96}{\index{element.\-h@{element.\-h}!add\-\_\-one\-\_\-idnode\-\_\-in\-\_\-way@{add\-\_\-one\-\_\-idnode\-\_\-in\-\_\-way}}
+\index{add\-\_\-one\-\_\-idnode\-\_\-in\-\_\-way@{add\-\_\-one\-\_\-idnode\-\_\-in\-\_\-way}!element.h@{element.\-h}}
+\subsubsection[{add\-\_\-one\-\_\-idnode\-\_\-in\-\_\-way}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-one\-\_\-idnode\-\_\-in\-\_\-way (
+\begin{DoxyParamCaption}
+\item[{int}]{idnode, }
+\item[{int}]{pos\-\_\-way, }
+\item[{int}]{pos\-\_\-node}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a39ca3388a5261d7f1f417b6db8e4ad96_a39ca3388a5261d7f1f417b6db8e4ad96}
+
+
+Ajoute un identifiant de \hyperlink{struct_node}{Node} dans le tableau de \hyperlink{struct_node}{Node} de la structure \hyperlink{struct_way}{Way}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em idnode} & un identifiant du noeud composant la way \\
+\hline
+{\em pos\-\_\-way} & La position du \hyperlink{struct_way}{Way} \\
+\hline
+{\em pos\-\_\-node} & La position dans le tableau de node de la structure \hyperlink{struct_way}{Way} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_a8505b3a1a5ed59545d36487d45227801_a8505b3a1a5ed59545d36487d45227801}{\index{element.\-h@{element.\-h}!add\-\_\-order\-\_\-way@{add\-\_\-order\-\_\-way}}
+\index{add\-\_\-order\-\_\-way@{add\-\_\-order\-\_\-way}!element.h@{element.\-h}}
+\subsubsection[{add\-\_\-order\-\_\-way}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-order\-\_\-way (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{k, }
+\item[{char $\ast$}]{v, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a8505b3a1a5ed59545d36487d45227801_a8505b3a1a5ed59545d36487d45227801}
+\hypertarget{element_8h_a0440e83989bf9e2f031808f2a97988d3_a0440e83989bf9e2f031808f2a97988d3}{\index{element.\-h@{element.\-h}!add\-\_\-tag\-\_\-in\-\_\-node@{add\-\_\-tag\-\_\-in\-\_\-node}}
+\index{add\-\_\-tag\-\_\-in\-\_\-node@{add\-\_\-tag\-\_\-in\-\_\-node}!element.h@{element.\-h}}
+\subsubsection[{add\-\_\-tag\-\_\-in\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-tag\-\_\-in\-\_\-node (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{k, }
+\item[{char $\ast$}]{v, }
+\item[{int}]{pos\-\_\-node, }
+\item[{int}]{pos\-\_\-tag}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a0440e83989bf9e2f031808f2a97988d3_a0440e83989bf9e2f031808f2a97988d3}
+
+
+Ajoute un \hyperlink{struct_tag}{Tag} dans le tableau de tag de la structure \hyperlink{struct_node}{Node}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em k} & la clé(\-Key) du \hyperlink{struct_tag}{Tag} \\
+\hline
+{\em v} & la valeur(\-Value) du \hyperlink{struct_tag}{Tag} \\
+\hline
+{\em pos\-\_\-node} & La position du \hyperlink{struct_node}{Node} contenant le tag \\
+\hline
+{\em pos\-\_\-tag} & La position du tag dans le tableau de tag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_a7fd9c1e60e39fce975bc9d5afb516d8c_a7fd9c1e60e39fce975bc9d5afb516d8c}{\index{element.\-h@{element.\-h}!add\-\_\-tag\-\_\-in\-\_\-way@{add\-\_\-tag\-\_\-in\-\_\-way}}
+\index{add\-\_\-tag\-\_\-in\-\_\-way@{add\-\_\-tag\-\_\-in\-\_\-way}!element.h@{element.\-h}}
+\subsubsection[{add\-\_\-tag\-\_\-in\-\_\-way}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-tag\-\_\-in\-\_\-way (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{k, }
+\item[{char $\ast$}]{v, }
+\item[{int}]{pos\-\_\-way, }
+\item[{int}]{pos\-\_\-tag}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a7fd9c1e60e39fce975bc9d5afb516d8c_a7fd9c1e60e39fce975bc9d5afb516d8c}
+
+
+Ajoute un \hyperlink{struct_tag}{Tag} dans le tableau de tag de la structure \hyperlink{struct_way}{Way}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em k} & la clé(\-Key) du \hyperlink{struct_tag}{Tag} \\
+\hline
+{\em v} & la valeur(\-Value) du \hyperlink{struct_tag}{Tag} \\
+\hline
+{\em pos\-\_\-way} & La position de la \hyperlink{struct_way}{Way} contenant le tag \\
+\hline
+{\em pos\-\_\-tag} & La position du tag dans le tableau de tag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_aed608cc0caae841ed6b8013403241dae_aed608cc0caae841ed6b8013403241dae}{\index{element.\-h@{element.\-h}!add\-\_\-way@{add\-\_\-way}}
+\index{add\-\_\-way@{add\-\_\-way}!element.h@{element.\-h}}
+\subsubsection[{add\-\_\-way}]{\setlength{\rightskip}{0pt plus 5cm}void add\-\_\-way (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}\label{element_8h_aed608cc0caae841ed6b8013403241dae_aed608cc0caae841ed6b8013403241dae}
+
+
+Initialise la \hyperlink{struct_way}{Way} avec {\itshape id}, à position {\itshape pos}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id} & l'identifiant de la \hyperlink{struct_way}{Way} \\
+\hline
+{\em pos} & La position dans le tableau de la \hyperlink{struct_way}{Way} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_acb1c6de5172f617d3d2ca9aeed40930d_acb1c6de5172f617d3d2ca9aeed40930d}{\index{element.\-h@{element.\-h}!close\-\_\-tabs@{close\-\_\-tabs}}
+\index{close\-\_\-tabs@{close\-\_\-tabs}!element.h@{element.\-h}}
+\subsubsection[{close\-\_\-tabs}]{\setlength{\rightskip}{0pt plus 5cm}void close\-\_\-tabs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{element_8h_acb1c6de5172f617d3d2ca9aeed40930d_acb1c6de5172f617d3d2ca9aeed40930d}
+
+
+suppression des tableaux alloues 
+
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000002}{A faire}]utilisation des free pour libérer la mémoire \begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\end{DoxyRefDesc}
+\hypertarget{element_8h_a5f2178d45a3e6d9aba18317f1d35a319_a5f2178d45a3e6d9aba18317f1d35a319}{\index{element.\-h@{element.\-h}!compare\-\_\-node@{compare\-\_\-node}}
+\index{compare\-\_\-node@{compare\-\_\-node}!element.h@{element.\-h}}
+\subsubsection[{compare\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-\_\-node (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a5f2178d45a3e6d9aba18317f1d35a319_a5f2178d45a3e6d9aba18317f1d35a319}
+
+
+comparaison de \hyperlink{struct_node}{Node} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & le premier node à comparer \\
+\hline
+{\em b} & le deuxième node à comparer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un int {\itshape n} qui vaut 0 a=b, est positif si a$>$b, -\/1 sinon 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_a908e8a0d1d700301e8e47968e6ab4a14_a908e8a0d1d700301e8e47968e6ab4a14}{\index{element.\-h@{element.\-h}!compare\-\_\-way@{compare\-\_\-way}}
+\index{compare\-\_\-way@{compare\-\_\-way}!element.h@{element.\-h}}
+\subsubsection[{compare\-\_\-way}]{\setlength{\rightskip}{0pt plus 5cm}int compare\-\_\-way (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a908e8a0d1d700301e8e47968e6ab4a14_a908e8a0d1d700301e8e47968e6ab4a14}
+
+
+comparaison de \hyperlink{struct_way}{Way} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & le premier way à comparer \\
+\hline
+{\em b} & le deuxième way à comparer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un int {\itshape n} qui vaut 0 a=b, est positif si a$>$b, -\/1 sinon 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_a6a727e0c32839abee18e32a16dee784e_a6a727e0c32839abee18e32a16dee784e}{\index{element.\-h@{element.\-h}!convert\-\_\-gps\-\_\-to\-\_\-meters@{convert\-\_\-gps\-\_\-to\-\_\-meters}}
+\index{convert\-\_\-gps\-\_\-to\-\_\-meters@{convert\-\_\-gps\-\_\-to\-\_\-meters}!element.h@{element.\-h}}
+\subsubsection[{convert\-\_\-gps\-\_\-to\-\_\-meters}]{\setlength{\rightskip}{0pt plus 5cm}double convert\-\_\-gps\-\_\-to\-\_\-meters (
+\begin{DoxyParamCaption}
+\item[{short}]{a}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a6a727e0c32839abee18e32a16dee784e_a6a727e0c32839abee18e32a16dee784e}
+\hypertarget{element_8h_a60b7cb646081941b2495a9a9178e5273_a60b7cb646081941b2495a9a9178e5273}{\index{element.\-h@{element.\-h}!convert\-\_\-lat\-\_\-to\-\_\-pixel@{convert\-\_\-lat\-\_\-to\-\_\-pixel}}
+\index{convert\-\_\-lat\-\_\-to\-\_\-pixel@{convert\-\_\-lat\-\_\-to\-\_\-pixel}!element.h@{element.\-h}}
+\subsubsection[{convert\-\_\-lat\-\_\-to\-\_\-pixel}]{\setlength{\rightskip}{0pt plus 5cm}int convert\-\_\-lat\-\_\-to\-\_\-pixel (
+\begin{DoxyParamCaption}
+\item[{double}]{a}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a60b7cb646081941b2495a9a9178e5273_a60b7cb646081941b2495a9a9178e5273}
+
+
+convertion de la latitude en pixel 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & La lattitude à convertir en pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la position de la latitude sur notre render 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello
+\end{DoxyAuthor}
+convertie la distance en lattitude(latitude minimal(bounds),lattitude Node) en pixel grâce à un rapport ingénieux. \begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_a55331efedf08f637da08073a9bfa5f26_a55331efedf08f637da08073a9bfa5f26}{\index{element.\-h@{element.\-h}!convert\-\_\-lon\-\_\-to\-\_\-pixel@{convert\-\_\-lon\-\_\-to\-\_\-pixel}}
+\index{convert\-\_\-lon\-\_\-to\-\_\-pixel@{convert\-\_\-lon\-\_\-to\-\_\-pixel}!element.h@{element.\-h}}
+\subsubsection[{convert\-\_\-lon\-\_\-to\-\_\-pixel}]{\setlength{\rightskip}{0pt plus 5cm}int convert\-\_\-lon\-\_\-to\-\_\-pixel (
+\begin{DoxyParamCaption}
+\item[{double}]{a}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a55331efedf08f637da08073a9bfa5f26_a55331efedf08f637da08073a9bfa5f26}
+
+
+convertion de la longitude en pixel 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em a} & La longitude à convertir en pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+la position de la longitude sur notre render 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello
+\end{DoxyAuthor}
+convertie la distance en longitude(longitude minimal(bounds),longitude Node) en pixel grâce à un rapport ingénieux. \begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_a27fc54df4fd8a45a29352c2952ad5fc4_a27fc54df4fd8a45a29352c2952ad5fc4}{\index{element.\-h@{element.\-h}!get\-\_\-order\-\_\-way@{get\-\_\-order\-\_\-way}}
+\index{get\-\_\-order\-\_\-way@{get\-\_\-order\-\_\-way}!element.h@{element.\-h}}
+\subsubsection[{get\-\_\-order\-\_\-way}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-order\-\_\-way (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{k, }
+\item[{char $\ast$}]{v}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a27fc54df4fd8a45a29352c2952ad5fc4_a27fc54df4fd8a45a29352c2952ad5fc4}
+\hypertarget{element_8h_a1d52ded0b9f031b3de7c4ef152b7e8d1_a1d52ded0b9f031b3de7c4ef152b7e8d1}{\index{element.\-h@{element.\-h}!init\-\_\-manager\-\_\-way@{init\-\_\-manager\-\_\-way}}
+\index{init\-\_\-manager\-\_\-way@{init\-\_\-manager\-\_\-way}!element.h@{element.\-h}}
+\subsubsection[{init\-\_\-manager\-\_\-way}]{\setlength{\rightskip}{0pt plus 5cm}void init\-\_\-manager\-\_\-way (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Surface $\ast$}]{window}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a1d52ded0b9f031b3de7c4ef152b7e8d1_a1d52ded0b9f031b3de7c4ef152b7e8d1}
+
+
+parcours notre tableau de \hyperlink{struct_way}{Way} et les affiche un à un sur le render 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & la surface sur laquelle on affichera le render \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{A faire}
+\item[\hyperlink{todo__todo000001}{A faire}]séparer la fonction avec des sous-\/fonctions \begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\end{DoxyRefDesc}
+\hypertarget{element_8h_a1915249eb5cb37898eeb7ec9a2c2b86d_a1915249eb5cb37898eeb7ec9a2c2b86d}{\index{element.\-h@{element.\-h}!init\-\_\-tabs@{init\-\_\-tabs}}
+\index{init\-\_\-tabs@{init\-\_\-tabs}!element.h@{element.\-h}}
+\subsubsection[{init\-\_\-tabs}]{\setlength{\rightskip}{0pt plus 5cm}void init\-\_\-tabs (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\-\_\-node, }
+\item[{int}]{nb\-\_\-way}
+\end{DoxyParamCaption}
+)}}\label{element_8h_a1915249eb5cb37898eeb7ec9a2c2b86d_a1915249eb5cb37898eeb7ec9a2c2b86d}
+\hypertarget{element_8h_aa6dfde1b4eb395cae36ac6e38b5a0e74_aa6dfde1b4eb395cae36ac6e38b5a0e74}{\index{element.\-h@{element.\-h}!search\-\_\-node\-\_\-i@{search\-\_\-node\-\_\-i}}
+\index{search\-\_\-node\-\_\-i@{search\-\_\-node\-\_\-i}!element.h@{element.\-h}}
+\subsubsection[{search\-\_\-node\-\_\-i}]{\setlength{\rightskip}{0pt plus 5cm}int search\-\_\-node\-\_\-i (
+\begin{DoxyParamCaption}
+\item[{int}]{id\-\_\-node\-\_\-searching}
+\end{DoxyParamCaption}
+)}}\label{element_8h_aa6dfde1b4eb395cae36ac6e38b5a0e74_aa6dfde1b4eb395cae36ac6e38b5a0e74}
+
+
+une simple recherche dichotomique sur notre tableau de \hyperlink{struct_node}{Node} 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em id\-\_\-node\-\_\-searching} & l'identifiant du noeud que l'on cherche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_aabbbfceeeaf39e863fa7e82539ffb99b_aabbbfceeeaf39e863fa7e82539ffb99b}{\index{element.\-h@{element.\-h}!tab\-\_\-node\-\_\-sort@{tab\-\_\-node\-\_\-sort}}
+\index{tab\-\_\-node\-\_\-sort@{tab\-\_\-node\-\_\-sort}!element.h@{element.\-h}}
+\subsubsection[{tab\-\_\-node\-\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}void tab\-\_\-node\-\_\-sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{element_8h_aabbbfceeeaf39e863fa7e82539ffb99b_aabbbfceeeaf39e863fa7e82539ffb99b}
+
+
+qsort() sur le tableau de \hyperlink{struct_node}{Node} 
+
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\hypertarget{element_8h_adeeba1f8f5687fcb1af0780e59b22acb_adeeba1f8f5687fcb1af0780e59b22acb}{\index{element.\-h@{element.\-h}!tab\-\_\-way\-\_\-sort@{tab\-\_\-way\-\_\-sort}}
+\index{tab\-\_\-way\-\_\-sort@{tab\-\_\-way\-\_\-sort}!element.h@{element.\-h}}
+\subsubsection[{tab\-\_\-way\-\_\-sort}]{\setlength{\rightskip}{0pt plus 5cm}void tab\-\_\-way\-\_\-sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{element_8h_adeeba1f8f5687fcb1af0780e59b22acb_adeeba1f8f5687fcb1af0780e59b22acb}
+
+
+qsort() sur le tableau de \hyperlink{struct_way}{Way} 
+
+\begin{DoxyAuthor}{Auteur}
+Fadyl Bello 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Février 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{Documentation des variables}
+\hypertarget{element_8h_ab106f7adbc63c5ff758dc58a0867ea04_ab106f7adbc63c5ff758dc58a0867ea04}{\index{element.\-h@{element.\-h}!mbounds@{mbounds}}
+\index{mbounds@{mbounds}!element.h@{element.\-h}}
+\subsubsection[{mbounds}]{\setlength{\rightskip}{0pt plus 5cm}{\bf bounds} mbounds}}\label{element_8h_ab106f7adbc63c5ff758dc58a0867ea04_ab106f7adbc63c5ff758dc58a0867ea04}
+\hypertarget{element_8h_abdff54aa90cc086c7d8af9d94e22620b_abdff54aa90cc086c7d8af9d94e22620b}{\index{element.\-h@{element.\-h}!size\-\_\-tab\-\_\-node@{size\-\_\-tab\-\_\-node}}
+\index{size\-\_\-tab\-\_\-node@{size\-\_\-tab\-\_\-node}!element.h@{element.\-h}}
+\subsubsection[{size\-\_\-tab\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}int size\-\_\-tab\-\_\-node}}\label{element_8h_abdff54aa90cc086c7d8af9d94e22620b_abdff54aa90cc086c7d8af9d94e22620b}
+\hypertarget{element_8h_a80bd81c0b34972c9875039ab9f7069f1_a80bd81c0b34972c9875039ab9f7069f1}{\index{element.\-h@{element.\-h}!size\-\_\-tab\-\_\-way@{size\-\_\-tab\-\_\-way}}
+\index{size\-\_\-tab\-\_\-way@{size\-\_\-tab\-\_\-way}!element.h@{element.\-h}}
+\subsubsection[{size\-\_\-tab\-\_\-way}]{\setlength{\rightskip}{0pt plus 5cm}int size\-\_\-tab\-\_\-way}}\label{element_8h_a80bd81c0b34972c9875039ab9f7069f1_a80bd81c0b34972c9875039ab9f7069f1}
+\hypertarget{element_8h_a7290cb94f8a7cdc423f1a7cf2ebdab6e_a7290cb94f8a7cdc423f1a7cf2ebdab6e}{\index{element.\-h@{element.\-h}!tab\-\_\-node@{tab\-\_\-node}}
+\index{tab\-\_\-node@{tab\-\_\-node}!element.h@{element.\-h}}
+\subsubsection[{tab\-\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ tab\-\_\-node}}\label{element_8h_a7290cb94f8a7cdc423f1a7cf2ebdab6e_a7290cb94f8a7cdc423f1a7cf2ebdab6e}
+\hypertarget{element_8h_a03c3bd454ae336db800fe10ff4b33533_a03c3bd454ae336db800fe10ff4b33533}{\index{element.\-h@{element.\-h}!tab\-\_\-way@{tab\-\_\-way}}
+\index{tab\-\_\-way@{tab\-\_\-way}!element.h@{element.\-h}}
+\subsubsection[{tab\-\_\-way}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Way}$\ast$ tab\-\_\-way}}\label{element_8h_a03c3bd454ae336db800fe10ff4b33533_a03c3bd454ae336db800fe10ff4b33533}

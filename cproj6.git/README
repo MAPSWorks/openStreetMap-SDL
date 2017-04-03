@@ -1,0 +1,6 @@
+Utilisation 
+
+make clean : Nettoie les .o
+make : Lance la compilation
+./cproj : Lance un fichier par défaut
+./cproj fileOsm.osm : Lance un fichier osm
